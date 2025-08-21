@@ -1,21 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>LineraUnion Blog</title>
-        <link>http://localhost:1313/LineraUnionblog/</link>
-        <description>Recent content on LineraUnion Blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Thu, 21 Aug 2025 13:29:42 +0800</lastBuildDate><atom:link href="http://localhost:1313/LineraUnionblog/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>http://localhost:1313/LineraUnionblog/post/test/</link>
-        <pubDate>Thu, 21 Aug 2025 13:29:42 +0800</pubDate>
-        
-        <guid>http://localhost:1313/LineraUnionblog/post/test/</guid>
-        <description>&lt;h1 id=&#34;-only-for-test&#34;&gt;# Only for test
-&lt;/h1&gt;&lt;p&gt;hello world!!!&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LineraUnion Blog</title><link>https://hairsboy-tech.github.io/LineraUnionblog/</link><description>Recent content on LineraUnion Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 21 Aug 2025 15:46:29 +0800</lastBuildDate><atom:link href="https://hairsboy-tech.github.io/LineraUnionblog/index.xml" rel="self" type="application/rss+xml"/><item><title>FirstArticle</title><link>https://hairsboy-tech.github.io/LineraUnionblog/post/firstarticle/</link><pubDate>Thu, 21 Aug 2025 15:46:29 +0800</pubDate><guid>https://hairsboy-tech.github.io/LineraUnionblog/post/firstarticle/</guid><description>&lt;h1 id="the-first-artcle">THE FIRST ARTCLE
+&lt;/h1>&lt;h3 id="lastest-updated-2025821-1547">lastest updated: 2025.8.21 15:47
+&lt;/h3>&lt;p>这是博客的第一篇文章&lt;/p>
+&lt;h4 id="遇到的问题">遇到的问题 &lt;em>&lt;strong>&lt;!-- raw HTML omitted -->解决方案摘自网络&lt;!-- raw HTML omitted -->&lt;/strong>&lt;/em>
+&lt;/h4>&lt;p>1.在Windows终端输入后，可正常在Windows生成hugo样式不会错乱，可在调整后继续用&lt;/p>
+&lt;p>&lt;code>hugo --gc --minify --cleanDestinationDir&lt;/code>以解决问题&lt;/p>
+&lt;p>2.新建博文&lt;/p>
+&lt;p>完成后，可以通过 &lt;code>hugo new&lt;/code> 命令发布新文章。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo new posts/test.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>title: &amp;#34;Test&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>date: 2022-10-21T19:00:43+08:00
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>draft: true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个命令会在 &lt;code>content&lt;/code> 目录下建立 &lt;code>post&lt;/code> 目录，并在 &lt;code>post&lt;/code> 下生成 &lt;code>test.md&lt;/code> 文件，博文书写就在这个文件里使用 Markdown 语法完成。博文的 front matter 里&lt;code>draft&lt;/code> 选项默认为 &lt;code>true&lt;/code>，需要改为 &lt;code>false&lt;/code> 才能发表博文，建议直接更改上面说的&lt;code>archetypes&lt;/code> 目录下的 &lt;code>default&lt;/code> 文件，把 &lt;code>draft: true&lt;/code> 改为 &lt;code>draft: false&lt;/code>，这样生成的博文就是默认可以发表的。&lt;/p>
+&lt;p>给git设置代理，方法如下：&lt;br>
+直接在Bash里输入命令设置全局http/https代理&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global http.proxy http://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global https.proxy https://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="git-的用法">git 的用法
+&lt;/h4>&lt;p>一个简单的操作步骤：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>git init - 初始化仓库。&lt;/li>
+&lt;li>git add . - 添加文件到暂存区。&lt;/li>
+&lt;li>git commit - 将暂存区内容添加到仓库中。&lt;/li>
+&lt;/ul>
+&lt;p>git clone 克隆仓库&lt;/p></description></item><item><title>Test</title><link>https://hairsboy-tech.github.io/LineraUnionblog/post/test/</link><pubDate>Thu, 21 Aug 2025 13:29:42 +0800</pubDate><guid>https://hairsboy-tech.github.io/LineraUnionblog/post/test/</guid><description>&lt;h1 id="-only-for-test"># Only for test
+&lt;/h1>&lt;p>hello world!!!&lt;/p></description></item></channel></rss>
